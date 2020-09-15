@@ -1,0 +1,5 @@
+{
+  "version": 2,
+  "name": "bypass_cors",
+  "builds": [{ "src": "cors.py", "use": "@now/python" }]
+}
