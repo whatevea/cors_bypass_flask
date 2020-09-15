@@ -1,8 +1,8 @@
 from flask import Flask,Response,request,jsonify
 import requests
 app=Flask(__name__)
-@app.route('/')
-def homepage():
+@app.route('/<path:path>')
+def catch_all(path):
 	if request.args.get('url') is None:
 		return "This is the homepage please add url parameter and replace the & with ^ character"
 	else:
